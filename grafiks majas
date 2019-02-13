@@ -7,7 +7,7 @@ xg <- append(x, 0)
 
 #print(xg)
 
-plot(tg,xg,xlim=c(0, t=1),xlab = "Time", ylab = "Jobs in the System", type ='s', col = 'blue')
+
 
 
 
@@ -18,7 +18,7 @@ library(MASS)
 sprintf(3. The Average Number of Jobs in the System %s", fractions(A3)) #3.uzd atbilde
 
 #2.uzd
-y  <- x[x! = 0] #nonemam 0
+y  <- x[x != 0] #nonemam 0
 #print(y)
 w <- (y-1) #atnem -1 visam vertibam
 #print(w)
