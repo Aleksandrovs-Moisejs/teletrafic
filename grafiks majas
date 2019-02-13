@@ -7,6 +7,9 @@ xg <- append(x, 0)
 
 #print(xg)
 
+plot(tg,xg,xlim=c(0, t=1),xlab = "Time", ylab = "Jobs in the System", type ='s', col = 'blue')
+
+
 
 #3.uzd
 S3 <- sum(x)
