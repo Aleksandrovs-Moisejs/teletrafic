@@ -1,24 +1,30 @@
 x <- c(0,2,2,3,3,6,6,7,7,8,8,9,0,0,0,3,3,5,5,1,1,9,9,0,0,0,2,2,3,0,0,0,0,0,1,1,5,-2) #Vertibas
 print(x)
 t <- c(25) #Laiks
+tg <-seq(from = 0, to = t, by = 1)
+#print(tg)
+xg <- append(x, 0)
+
+#print(xg)
+
 
 #3.uzd
 S3 <- sum(x)
 A3 <- S3/t
 library(MASS)
-print(fractions(A3)) #3.uzd atbilde
+sprintf(3. The Average Number of Jobs in the System %s", fractions(A3)) #3.uzd atbilde
 
 #2.uzd
 y  <- x[x! = 0] #nonemam 0
-print(y)
+#print(y)
 w <- (y-1) #atnem -1 visam vertibam
-print(w)
+#print(w)
 S2 <- sum(w)
 A2 <- S2/t
-print(fractions(A2)) #2.uzd atbilde
+sprintf("2. The Average Queue Length %s", fractions(A2)) #2.uzd atbilde
 
 #1.uzd
 S1 <- length(y) #Nosaka mums darbu zem 1 vertibam
 print(S1)
 A1 <- S1/t
-print(fractions(A1)) # 1.uzd atbilde
+sprintf("1. Average Server Utility(load) in the given time interval %s", fractions(A1)) # 1.uzd atbilde
